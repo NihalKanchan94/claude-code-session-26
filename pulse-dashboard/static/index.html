@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pulse Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pulse</h1>
+    <p>Sales overview &mdash; 2026</p>
+  </header>
+
+  <section class="kpis">
+    <div class="card"><span class="label">Total revenue</span><strong id="kpi-revenue">&mdash;</strong></div>
+    <div class="card"><span class="label">Orders</span><strong id="kpi-orders">&mdash;</strong></div>
+    <div class="card"><span class="label">Average order</span><strong id="kpi-average">&mdash;</strong></div>
+  </section>
+
+  <section class="panel">
+    <h2>Revenue by month</h2>
+    <div id="chart-month" class="bars"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Revenue by region</h2>
+    <div id="chart-region" class="bars"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Top reps</h2>
+    <table id="table-reps">
+      <thead><tr><th>Rep</th><th>Revenue</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
